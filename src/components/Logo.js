@@ -10,7 +10,7 @@ class Logo extends React.Component {
         return (
             <div class="info-title-wrapper">
                 <div class="site-title-wrapper">
-                    <a href="/" class="home-link">
+                    <a href="/site" class="home-link">
                         <img src={LOGO_MAIN} alt="Justin Lam" class="logo" />
                     </a>
                 </div>

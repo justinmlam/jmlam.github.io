@@ -1,0 +1,42 @@
+@import 'variables';
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.row {
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    margin-left: 16%;
+    margin-right: 16%;
+    font-family: 'Montserrat', sans-serif;
+    color: $secondary-color;
+    font-size: 22px;
+
+    &-container {
+        padding-top: 5rem;
+    }
+
+    &-title {
+        position: relative;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-family: 'Comfortaa', cursive;
+        color: $secondary-color;
+        font-size: 40px;
+    }
+}
+
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}

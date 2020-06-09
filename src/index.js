@@ -5,19 +5,41 @@ import './scss/main.scss';
 
 import Navbar from './components/Navbar';
 import Logo from './components/Logo';
+import Intro from './components/Intro';
 
-import background from './images/background.png';
 
 class Home extends React.Component {
-    render() {
+  constructor() {
+    super();
+    this.state = {
+      scrolled: false,
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY < 300) {
+        this.setState({scrolled: false});
+      } else {
+        this.setState({scrolled: true});
+      }
+    })
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll');
+  }
+
+  render() {
       return (
         <div>
-            <div>
+            <div className="logo-container">
                 <Logo />
+            </div>
+            <div className={this.state.scrolled ? "sticky" : ""}>
                 <Navbar />
             </div>
             <div class="base">
-                <img src={background} alt="Background" class="bg-img" />
+                <Intro />
             </div>
         </div>
       );
