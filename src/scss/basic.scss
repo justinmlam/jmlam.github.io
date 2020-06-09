@@ -4,7 +4,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
+
+.sticky + .base {
+    padding-top: 60px;
+}
 
 .row {
     width: 100%;

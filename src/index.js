@@ -18,7 +18,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', () => {
-      if(window.scrollY < 300) {
+      if(window.scrollY < 250) {
         this.setState({scrolled: false});
       } else {
         this.setState({scrolled: true});
