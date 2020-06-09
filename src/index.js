@@ -6,6 +6,8 @@ import './scss/main.scss';
 import Navbar from './components/Navbar';
 import Logo from './components/Logo';
 import Intro from './components/Intro';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 
 class Home extends React.Component {
@@ -40,6 +42,8 @@ class Home extends React.Component {
             </div>
             <div class="base">
                 <Intro />
+                <Experience />
+                <Projects />
             </div>
         </div>
       );

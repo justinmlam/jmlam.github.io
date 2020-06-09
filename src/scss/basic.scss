@@ -22,12 +22,15 @@
     color: $secondary-color;
     font-size: 22px;
 
+    &-base {
+        height: 100vh;
+    }
+
     &-container {
         padding-top: 5rem;
     }
 
     &-title {
-        position: relative;
         margin-left: 25%;
         margin-right: 25%;
         font-family: 'Comfortaa', cursive;

@@ -19,6 +19,14 @@ a {
 	color: black;
 }
 
+hr {
+	width: 35%;
+	margin-left: 0;
+	margin-top: -2rem;
+	border-style: outset;
+	border-width: 3px;
+}
+
 .logo {
 	height: 200px;
 	width: 200px;
@@ -35,6 +43,11 @@ a {
 	background-color: $base-color;
 	height: 2000px;
 	padding: 16px;
+
+
+	font-family: 'Montserrat', sans-serif;
+    color: $secondary-color;
+    font-size: 22px;
 }
 
 .info-title-wrapper {
