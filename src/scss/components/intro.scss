@@ -1,0 +1,54 @@
+.intro {
+
+    &-summary {
+        text-align: left;
+        margin-left: 16%;
+        margin-right: 16%;
+        font-family: 'Montserrat', sans-serif;
+        color: $secondary-color;
+        font-size: 22px;
+    }
+
+    &-base {
+        height: 100vh;
+    }
+
+    &-container {
+        padding-top: 2rem;
+    }
+
+    &-title {
+        margin-left: 25%;
+        margin-right: 25%;
+        font-family: 'Comfortaa', cursive;
+        color: $secondary-color;
+        font-size: 40px;
+    }
+
+    &-heresmy {
+        padding-left: 2vh;
+    }
+
+    &-topics {
+        text-align: center;
+
+        ul li {
+            display: inline;
+            // margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 10px;
+        }
+    }
+
+    &-end {
+        float: right;
+    }
+
+    &-secondaryfont {
+        color: $secondary-color;
+    }
+
+    &-hiddentext {
+        color: $base-color;
+    }
+}

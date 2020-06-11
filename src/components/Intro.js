@@ -8,12 +8,40 @@ class Intro extends React.Component {
             <div class="intro-base">
                 <div class="row intro-container">
                     <div class="intro-title">
-                        Hello, I'm Justin
+                        Hi, I'm Justin
                     </div>
                 </div>
                 <div class="row">
-                    <div class="intro pt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div class="intro-summary pt-2 mb-2">
+                        I'm a Vancouver-based developer with a background in Math. <br /><br />
+                        From the early years of hacking video games in elementary school,<br />
+                        to creating game modifications in high school,<br />
+                        taking Computer Science courses in university,<br />
+                        and finally leading to a career in software development,<br /> 
+                        I've always had pure passion for solving problems with code.
+                        <br /><br />
+                        Lead by a growth mindset, I'm constantly looking for new challenges to face and ways to improve.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="intro-heresmy">
+                        Here's my:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="intro-topics">
+                        <ul class="pr-5">
+                            <li><a>EXPERIENCE</a></li>
+                            <li><a class="intro-secondaryfont">PROJECTS</a></li>
+                            <li><a>ABOUT</a></li>
+                        </ul>
+
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="intro-end">
+                        Stay a while, won't you?
                     </div>
                 </div>
             </div>
