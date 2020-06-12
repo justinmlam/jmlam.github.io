@@ -7,8 +7,10 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
-                <h1>PROJECTS</h1>
-                <hr></hr>
+                <div id="projects" class="projects-section">
+                    <h1>PROJECTS</h1>
+                    <hr></hr>
+                </div>
             </div>
         )
     }

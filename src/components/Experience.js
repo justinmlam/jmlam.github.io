@@ -7,8 +7,10 @@ class Experience extends React.Component {
     render() {
         return (
             <div>
-                <h1>EXPERIENCE</h1>
-                <hr></hr>
+                <div id="experience" class="experience-section">
+                    <h1>EXPERIENCE</h1>
+                    <hr></hr>
+                </div>
             </div>
         )
     }

@@ -15,9 +15,6 @@
 	border-color: #e9e9e9;
 	background-color: $secondary-color;
 	overflow: hidden;
-}
-
-.nav-wrapper {
 	ul li {
 		display: inline;
 		// margin: 0 auto;
@@ -27,4 +24,8 @@
 		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 2px;
 	}
+}
+
+.nav-item > .active {
+    border-bottom: 1px solid #333;
 }
