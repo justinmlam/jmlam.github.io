@@ -8,6 +8,7 @@
 @import './components/logo.scss';
 @import './components/experience.scss';
 @import './components/projects.scss';
+@import './components/contact.scss';
 
 html,body {
     margin: 0;
@@ -35,10 +36,7 @@ hr {
 
 .base {
 	background-color: $base-color;
-	height: 2000px;
 	padding: 16px;
-
-
 	font-family: 'Montserrat', sans-serif;
     color: $secondary-color;
     font-size: 22px;
@@ -47,6 +45,11 @@ hr {
 .info-title-wrapper {
 	padding-bottom: 4rem;
 	padding-top: 2rem;
+}
+
+// temporary
+.stay-right {
+	float: right;
 }
 
 .row {
@@ -69,10 +72,10 @@ hr {
     padding-top: 2rem;
 }
 
-.pl-0{
+.pl-0 {
 	padding-left: 0;
 }
 
-.pr-5{
-	padding-right: 10rem;
+.pr-8 {
+	padding-right: 8rem;
 }

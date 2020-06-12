@@ -11,11 +11,20 @@ class Navbar extends React.Component {
                     <li class="nav-item">
                         <Link 
                             activeClass="active"
-                            to="main"
+                            to="intro"
+                            spy={true}
+                            smooth={true}
+                            offset={-500}
+                            duration={500}>HOME</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link 
+                            activeClass="active"
+                            to="experience"
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}>HOME</Link>
+                            duration={500}>EXPERIENCE</Link>
                     </li>
                     <li class="nav-item">
                         <Link 
@@ -29,11 +38,11 @@ class Navbar extends React.Component {
                     <li class="nav-item">
                         <Link 
                             activeClass="active"
-                            to="about"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}>ABOUT</Link>
+                            duration={500}>CONTACT</Link>
                     </li>
                 </ul>
             </div>

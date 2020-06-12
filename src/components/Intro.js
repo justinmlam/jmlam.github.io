@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import '../scss/main.scss';
 
 
 class Intro extends React.Component {
     render() {
         return (
-            <div class="intro-base">
+            <div id="intro" class="intro-base">
                 <div class="row intro-container">
                     <div class="intro-title">
                         Hi, I'm Justin
@@ -30,12 +32,35 @@ class Intro extends React.Component {
                 </div>
                 <div class="row">
                     <div class="intro-topics">
-                        <ul class="pr-5">
-                            <li><a>EXPERIENCE</a></li>
-                            <li><a class="intro-secondaryfont">PROJECTS</a></li>
-                            <li><a>ABOUT</a></li>
+                        <ul class="pr-8">
+                            <li class="nav-item">
+                                <Link 
+                                    activeClass="active"
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>EXPERIENCE</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link 
+                                    activeClass="active"
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}><a class="intro-secondaryfont">PROJECTS</a></Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link 
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>CONTACT</Link>
+                            </li>
                         </ul>
-
                     </div>
                    
                 </div>
