@@ -2,9 +2,48 @@ import React from 'react';
 
 import '../scss/main.scss';
 
+class ProjectStack extends React.Component {
+    render() {
+        return (
+            <div className="project-stack">
+                {this.props.stack.map((skill, index) => {
+                    return <span className="project-skill">skill</span>
+                })}
+            </div>
+        )
+    }
+}
+
+class ProjectLinks extends React.Component {
+    render() {
+        const { src, live } = this.props.links;
+
+        return (
+            <div className="project-links">
+
+            </div>
+        )
+    }
+}
+
+class ProjectCard extends React.Component {
+    render() {
+        const { title, description, stack, image, links } = this.props;
+
+        return (
+            <div className="project-card">
+                {title}
+            </div>
+        );
+    }
+};
 
 class Projects extends React.Component {
     render() {
+        const { projects } = this.props;
+
+
+
         return (
             <div>
                 <div id="projects" class="projects-section">
@@ -13,6 +52,16 @@ class Projects extends React.Component {
                         <hr></hr>
                     </div>
                     <div class="projects-body">
+                        {projects.map(project => (
+                            <ProjectCard
+                                title={project.title}
+                                description={project.description}
+                                stack={project.stack}
+                                image={project.image}
+                                links={project.links}
+                                key={project.title}
+                                />
+                        ))}
                         [wip]
                         <br />
                         <br />

@@ -4,4 +4,9 @@
     &-section {
         height: 100vh;
     }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+    }
 }

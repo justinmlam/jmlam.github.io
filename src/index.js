@@ -10,6 +10,8 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 
+import projects from './content/projects';
+import experience from './content/experience';
 
 class Home extends React.Component {
   constructor() {
@@ -43,8 +45,8 @@ class Home extends React.Component {
             </div>
             <div class="base">
                 <Intro />
-                <Experience />
-                <Projects />
+                <Experience experience={experience} />
+                <Projects projects={projects} />
                 <Contact />
             </div>
         </div>

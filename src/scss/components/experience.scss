@@ -4,4 +4,35 @@
     &-section {
         height: 100vh;
     }
+    &-body {
+        columns: 2 auto;
+    }
+    &-card {
+        height: 20vh;
+        box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+        margin-bottom: 3rem;
+
+
+        &-image {
+            height: 100%;
+            float: left;
+            display: block;
+        }
+        &-content {
+            margin-left: 22vh;
+            margin-right: 2vh;
+            font-size: 2vh;
+            &-company {
+                text-align: left;
+                font-size: 5vh;
+            }
+            &-role {
+                
+            }
+            &-date {
+
+            }
+
+        }
+    }
 }
