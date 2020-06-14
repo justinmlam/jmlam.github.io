@@ -1,3 +1,5 @@
+import foodcouver from '../images/projects/foodcouver.png';
+
 export default [
     {
         title: "Project title",
@@ -10,33 +12,13 @@ export default [
         }
     },
     {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
-        image: null,
+        title: "foodcouver",
+        description: "An exploratory data analysis on the food scene in Vancouver, BC, Canada",
+        stack: ['Python', 'Jupyter', 'etc..'],
+        image: foodcouver,
         links: {
-            'src': 'github.com',
-            'live': null,
-        }
-    },
-    {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
-        image: null,
-        links: {
-            'src': 'github.com',
-            'live': null,
-        }
-    },
-    {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
-        image: null,
-        links: {
-            'src': 'github.com',
-            'live': null,
+            'src': 'https://www.github.com',
+            'live': 'https://www.github.com',
         }
     },
     {

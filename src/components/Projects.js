@@ -7,7 +7,7 @@ class ProjectStack extends React.Component {
         return (
             <div className="project-stack">
                 {this.props.stack.map((skill, index) => {
-                    return <span className="project-skill">skill</span>
+                    return <span className="project-card-content-skill">{skill}</span>
                 })}
             </div>
         )
@@ -19,8 +19,15 @@ class ProjectLinks extends React.Component {
         const { src, live } = this.props.links;
 
         return (
-            <div className="project-links">
-
+            <div className="project-card-content-links">
+                {src &&
+                <a href={src}>
+                    <button className="project-card-content-link">Source</button>
+                </a>}
+                {live &&
+                <a href={live}>
+                    <button className="project-card-content-link">Live</button>
+                </a>}
             </div>
         )
     }
@@ -32,7 +39,15 @@ class ProjectCard extends React.Component {
 
         return (
             <div className="project-card">
-                {title}
+                <img className="project-card-content-image" src={image}></img>
+                <div className="project-card-content">
+                    <span className="project-card-content-title">{title}</span>
+                    <article className="project-card-content-description">{description}</article>
+                    <ProjectStack 
+                        stack={stack} />
+                    <ProjectLinks
+                        links={links} />
+                </div>
             </div>
         );
     }
@@ -62,26 +77,6 @@ class Projects extends React.Component {
                                 key={project.title}
                                 />
                         ))}
-                        [wip]
-                        <br />
-                        <br />
-                        personal
-                        <ul>
-                            <li><a href="https://github.com/justinmlam/used-car-price-predictor">used car price predictor [wip]</a><span class="stay-right">machine learning / dev</span></li>
-                            <li><a href="https://github.com/justinmlam/foodcouver">foodcouver</a><span class="stay-right">exploratory data analysis</span></li>
-                            <li><a href="https://github.com/justinmlam/league-of-legends-match-eda">league of legends data analysis</a><span class="stay-right">exploratory data analysis</span></li>
-                            <li><a href="https://github.com/justinmlam/notetaker-django">notetaker django app</a><span class="stay-right">web dev</span></li>
-                        </ul>
-                        <br />
-                        <br />
-                        udacity projects
-                        <ul>
-                            <li><a href="https://github.com/justinmlam/dermatologist-ai">dermatologist ai</a><span class="stay-right">machine learning</span></li>
-                            <li><a href="https://github.com/justinmlam/tv_script_generator">tv script generator</a><span class="stay-right">machine learning</span></li>
-                            <li><a href="https://github.com/justinmlam/GAN_face_generator">face generator</a><span class="stay-right">machine learning</span></li>
-                            <li><a href="https://github.com/justinmlam/dog_classifier">dog classifier</a><span class="stay-right">machine learning</span></li>
-                            <li><a href="https://github.com/justinmlam/bike_sharing_predictions">bike sharing predictions</a><span class="stay-right">machine learning</span></li>
-                        </ul>
                     </div>
                 </div>
             </div>

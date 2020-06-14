@@ -30,7 +30,6 @@ class Experience extends React.Component {
                     <div class="experience-title">
                         <h1>EXPERIENCE</h1>
                         <hr></hr>
-                        [wip]
                     </div>
                     <div class="experience-body">
                         {experience.map(exp => (
