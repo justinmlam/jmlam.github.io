@@ -1,44 +1,46 @@
 import foodcouver from '../images/projects/foodcouver.png';
+import notetaker from '../images/projects/notetaker.png';
 
 export default [
     {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
+        title: "Used Car Price Predictor",
+        description: "wip",
+        stack: ['Python', 'Django', 'etc..'],
         image: null,
         links: {
-            'src': 'github.com',
+            'src': null,
+            'live': null,
+        }
+    },
+    {
+        title: "Notetaker",
+        description: "Take notes, set and check off todo items.",
+        stack: ['Python', 'Django', 'HTML', 'CSS'],
+        image: notetaker,
+        links: {
+            'src': 'https://github.com/justinmlam/notetaker-django',
             'live': null,
         }
     },
     {
         title: "foodcouver",
         description: "An exploratory data analysis on the food scene in Vancouver, BC, Canada",
-        stack: ['Python', 'Jupyter', 'etc..'],
+        stack: ['Python', 'Jupyter'],
         image: foodcouver,
         links: {
-            'src': 'https://www.github.com',
-            'live': 'https://www.github.com',
-        }
-    },
-    {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
-        image: null,
-        links: {
-            'src': 'github.com',
+            'src': 'https://github.com/justinmlam/foodcouver',
             'live': null,
         }
     },
+
     {
-        title: "Project title",
-        description: "Description here",
-        stack: ['HTML', 'CSS', 'etc..'],
+        title: "Portfolio Website",
+        description: "The one you're on right now!",
+        stack: ['JavaScript', 'React', 'HTML', 'CSS'],
         image: null,
         links: {
-            'src': 'github.com',
-            'live': null,
+            'src': 'https://github.com/justinmlam/site',
+            'live': 'https://justinmlam.github.io/site/',
         }
     },
 ]
