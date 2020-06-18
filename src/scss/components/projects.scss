@@ -6,7 +6,6 @@
     }
 
     &-body {
-        columns: 2 auto;
         margin-top: 3vh;
         margin-left: 10vh;
         margin-right: 10vh;
@@ -15,21 +14,36 @@
 
 .project {
     &-card {
-        height: 80vh;
+        height: 40vh;
         box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
         margin-bottom: 3rem;
-        &-content {
-            height: 100%;
-            &-title {
 
+        &-content {
+            text-align: center;
+            height: 100%;
+
+
+            &-title {
+                margin-top: 2rem;
             }
             &-description {
 
             }
             &-image {
-                width: 100%;
-                float: left;
+                height: 100%;
                 display: block;
+                margin: auto;
+
+                &-container{
+                    height: 100%;
+                    float: left;
+                    display: block;
+                    left: 0;
+                    width: 40%;
+                    overflow: hidden;
+                    border: 2px solid black;
+
+                }
             }
             &-skill {
                 margin-right: 1rem;

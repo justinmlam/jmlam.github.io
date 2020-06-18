@@ -39,7 +39,9 @@ class ProjectCard extends React.Component {
 
         return (
             <div className="project-card">
-                <img className="project-card-content-image" src={image}></img>
+                <div className="project-card-content-image-container">
+                    <img className="project-card-content-image" src={image}></img>
+                </div>
                 <div className="project-card-content">
                     <span className="project-card-content-title">{title}</span>
                     <article className="project-card-content-description">{description}</article>
